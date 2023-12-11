@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <style type="text/css">
+       
+        body{
+        background-image: url("css/loginworker.jpg");
+        background-size: 110% 690px;
+            
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+     margin: 0;
+    padding: 0;
+        }
+        nav {
+            margin-bottom:30px ;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            height: 60px;
+             background-color: black;
+        }
+        a{
+    text-decoration: none;
+}
+    
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            background: transparent;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 30px;
+        }
+
+        .left {
+            /* Add styles for the left div */
+            font-size: 1.5rem;
+        }
+        
+        #container {
+    width: 380px; /* Set the desired width of the container */
+    height: 290px;
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 20px; /* Add padding to create space inside the box */
+    margin-top: 225px;
+    margin-right: 960px;
+    border: transparent; /* Add a border around the container */
+   background-color: white;
+    border-radius: 5px; /* Add rounded corners to the box */
+    display: flexbox;
+}
+
+#submit-btn{
+            background-color: #080808;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            margin: 5px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+            
+   
+    align-items: center;
+    text-align: center;
+        }
+
+      #submit-btn:hover {
+            background-color: #6d21ac;
+        }
+
+        h1 {
+            color: rgb(80, 8, 80);
+        }
+        /* Your other CSS styles here */
+
+    </style>
+</head>
+
+<body>
+    <nav>
+    <div class="right">
+        <ul>
+                <li><a href="#home">Home</a></li>
+              <li><a href="About">About</a></li>
+               <li><a href="#Services">Services</a></li>
+                <li><a href="#Project">Project</a></li>
+                <li><a href="#Contact">Contact</a></li>
+                
+            </ul>
+    </div>
+</nav>
+
+    <div id="container">
+        <form id="login-form" action="LoginController" method="post">
+            <h1>Login</h1>
+            Username: <input class="input-field" type="text" name="Email" placeholder="Enter username"><br><br>
+            Password: <input class="input-field" type="password" name="Password" placeholder="Enter Password"><br><br>
+            <div id="submit-container">
+                <input id="submit-btn" type="submit" value="Submit"><br><br>
+            </div>
+            <a href="Registration.html">Register</a>
+        </form>
+    </div>
+</body>
+
+</html>
